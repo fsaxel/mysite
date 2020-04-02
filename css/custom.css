@@ -2,9 +2,29 @@ html, body, .custom-nav {
   color: #fff;
   background-color: #020202;
   overflow-x: hidden;
-  overflow-y: hidden;
   font-family: 'Montserrat', sans-serif;
 }
+
+html {
+  --scrollbarBG: #020202;
+  --thumbBG: #90A4AE;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG)blac;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
 
 .custom-nav {
   margin-top: 5%;
@@ -78,7 +98,7 @@ width: 80%;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .custom-nav {
     visibility: hidden;
   }
