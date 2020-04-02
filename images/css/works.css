@@ -1,0 +1,172 @@
+html, body, .custom-nav {
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #020202;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  --scrollbarBG: #020202;
+  --thumbBG: #90A4AE;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG)blac;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+
+.custom-nav {
+  margin-top: 5%;
+}
+
+a { color: inherit; }
+
+a:hover {text-decoration: none; color: #757574;}
+
+.custom-nav-external {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 23px;
+    visibility: hidden;
+}
+
+.div-text-logo, .custom-nav-external h4 {
+  font-style: italic;
+  margin-bottom: 5%;
+}
+
+.furious, .oxey {
+  margin-bottom: 3%;
+}
+
+.aion {
+  height: 100px;
+  background-image: url('../images/aion-banner.jpg');
+}
+
+.aion img {
+  display: inline-flex;
+  max-width: 120px;
+}
+
+.furious {
+  height: 100px;
+  background-image: url('../images/fg-banner.jpg');
+}
+a { color: inherit; }
+.oxey {
+  height: 100px;
+  background-image: url('../images/ot-banner.jpg');
+}
+
+.oxey img {
+  display: inline-flex;
+  max-width: 80px;
+}
+
+.furious img {
+  display: inline-flex;
+  max-width: 90px;
+}
+
+.boton-ver {
+  padding-top: 4%;
+  border: 1px solid gray;
+  width: 50%;
+}
+
+.nombre {
+  font-size: 50px;
+  margin-bottom: -10px;
+}
+
+.custom-footer {
+  margin-top: 50px;
+  margin-left: 5%;
+}
+
+.news-blog {
+  padding-left: 10%;
+  margin-right: 40%;
+}
+
+.row li {
+  width: 33.3%;
+  float: left;
+}
+
+.github, .keybase, .twitter{
+  border: 0 none;
+  display: inline-block;
+  height: auto;
+  margin-top: 20%;
+  width: 50px;
+  max-width: 100px;
+  vertical-align: middle;
+}
+
+
+.boton {
+margin-top: 3%;
+height: 100%;
+width: 80%;
+}
+
+.gif-go {
+  width: 100%;
+  margin-top: -100px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .custom-nav {
+    visibility: hidden;
+    position: fixed;
+  }
+
+  .nombre-trabajo {
+    font-size: 100%;
+  }
+
+  .custom-footer {
+    margin-top: 50px;
+  }
+  .custom-nav-external {
+    visibility: visible;
+    margin-bottom: 40%;
+    position: static;
+  }
+  .gif-go {
+    width: 200px;
+    margin-top: 30px;
+  }
+  .texto {
+    margin-top: 20px;
+  }
+  .boton {
+    width: 200px;
+    align-items: center;
+    vertical-align: bottom;
+  }
+  .boton-ver {
+    width: 110%;
+  }
+  .descripcion {
+    width: 200%;
+  }
+}
