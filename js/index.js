@@ -89,4 +89,7 @@ $( document ).ready(function() {
       }
     })
   });
+  $(".boton").click(function(){
+    window.location.href = "https://fsaxel.info/contact";
+  })
 });
