@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Axel Arias | Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/index.js" charset="utf-8"></script>
+    <script src="js/contact.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="custom-nav">
+        <div class="row">
+          <div class="col-sm div-text-logo">
+            <h4><strong>fsaxel.</strong></h4>
+          </div>
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+            <div class="row">
+              <div class="col-sm">
+                <a href="https://fsaxel.info">Home</a>
+              </div>
+              <div class="col-sm">
+                <a href="https://fsaxel.info/works">Works</a>
+              </div>
+              <div class="col-sm">
+                <a href="https://fsaxel.info/blog">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pos-f-t">
+      <div id="navbarToggleExternalContent">
+        <div class="p-4 custom-nav-external">
+          <center>
+            <h4><strong>fsaxel.</strong></h4>
+            <a href="https://fsaxel.info"><p>Home</p></a>
+            <a href="https://fsaxel.info/works"><p>Works</p></a>
+            <a href="https://fsaxel.info/blog"><p>Blog</p></a>
+          </center>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Contact</h1>
+      <!--Section: Contact v.2-->
+      <section class="mb-4">
+          <p class="tw-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly.</p>
+          <div class="row">
+              <div class="col-md-9 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="name" name="name" class="form-control">
+                                  <label for="name" class="">Your name</label>
+                              </div>
+                          </div>
+                          <!--Grid column-->
+
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="email" name="email" class="form-control">
+                                  <label for="email" class="">Your email</label>
+                              </div>
+                          </div>
+                          <!--Grid column-->
+
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="subject" name="subject" class="form-control">
+                                  <label for="subject" class="">Subject</label>
+                              </div>
+                          </div>
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                          <!--Grid column-->
+                          <div class="col-md-12">
+
+                              <div class="md-form">
+                                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                  <label for="message">Your message</label>
+                              </div>
+
+                          </div>
+                      </div>
+                      <!--Grid row-->
+
+                  </form>
+
+                  <div class="text-center text-md-left">
+                      <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                  </div>
+                  <div class="status"></div>
+              </div>
+              <!--Grid column-->
+
+          </div>
+
+      </section>
+      <!--Section: Contact v.2-->
+    </div>
+    <footer class="custom-footer w-100 p-3">
+      <div class="row">
+        <div class="col-4">
+          <p style="color: gray;">News in blog</p>
+          <p>How is the cost of a website calculated?</p>
+        </div>
+        <div class="col-5">
+            <div class="row">
+              <div id="small-img" class="col-xs-12 col-sm-12">
+                <ul>
+                  <li>
+                    <img src="/images/github-logo.png" class="github image" alt="Responsive image" />
+                  </li>
+                  <li>
+                    <img src="/images/keybase-logo.png" class="keybase image" alt="Responsive image" />
+                  </li>
+                  <li>
+                    <img src="/images/twitter-logo.png" class="twitter image" alt="Responsive image"/>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col container">
+            <button type="button" class="btn boton btn-light"><strong>Send Message ⟶</strong></button>
+          </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      document.getElementById('status').innerHTML = "Sending...";
+      formData = {
+      'name'     : $('input[name=name]').val(),
+      'email'    : $('input[name=email]').val(),
+      'subject'  : $('input[name=subject]').val(),
+      'message'  : $('textarea[name=message]').val()
+      };
+
+
+      $.ajax({
+      url : "mail.php",
+      type: "POST",
+      data : formData,
+      success: function(data, textStatus, jqXHR)
+      {
+
+      $('#status').text(data.message);
+      if (data.code) //If mail was sent successfully, reset the form.
+      $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+      },
+      error: function (jqXHR, textStatus, errorThrown)
+      {
+      $('#status').text(jqXHR);
+      }
+      });
+    </script>
+  </body>
+</html>
