@@ -1,11 +1,35 @@
 html, body, .custom-nav {
   overflow-x: hidden;
-    overflow-y: hidden;
   color: #fff;
   background-color: #020202;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  overflow-y: hidden;
+}
+
+html {
+  --scrollbarBG: #020202;
+  --thumbBG: #90A4AE;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG)blac;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
 
 .custom-nav {
   margin-top: 5%;
@@ -116,37 +140,23 @@ width: 80%;
 @media only screen and (max-width: 800px) {
   .custom-nav {
     visibility: hidden;
-    position: fixed;
   }
 
-  .nombre-trabajo {
-    font-size: 100%;
+  li img {
+    padding: 10px;
   }
 
-  .custom-footer {
-    margin-top: 50px;
+  .div-vacio {
+    display: none;
   }
   .custom-nav-external {
     visibility: visible;
-    margin-bottom: 40%;
-    position: static;
+    margin-bottom: 50%;
+    position: sticky;
+    margin-top: -40%;
   }
-  .gif-go {
-    width: 200px;
-    margin-top: 30px;
-  }
-  .texto {
-    margin-top: 20px;
-  }
-  .boton {
-    width: 200px;
-    align-items: center;
-    vertical-align: bottom;
-  }
-  .boton-ver {
-    width: 110%;
-  }
-  .descripcion {
-    width: 200%;
+  .custom-footer {
+    margin-top: 50px;
+    margin-left: 5%;
   }
 }

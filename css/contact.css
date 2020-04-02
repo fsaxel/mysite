@@ -5,6 +5,10 @@ html, body, .custom-nav {
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 html {
   --scrollbarBG: #020202;
   --thumbBG: #90A4AE;
@@ -102,27 +106,24 @@ width: 80%;
     visibility: hidden;
   }
 
-  .custom-footer {
-    margin-top: 50px;
+  li img {
+    padding: 10px;
+  }
+
+  .div-vacio {
+    display: none;
   }
   .custom-nav-external {
     visibility: visible;
-    margin-bottom: 80%;
+    margin-bottom: 50%;
+    position: sticky;
+    margin-top: -40%;
   }
-  .gif-go {
-    width: 200px;
-    margin-top: 30px;
+  .custom-footer {
+    margin-top: 50px;
+    margin-left: 5%;
   }
-
   .boton {
-    width: 200px;
-    align-items: center;
-    vertical-align: bottom;
-  }
-  .boton-ver {
-    width: 110%;
-  }
-  .descripcion {
-    width: 200%;
+    display: none;
   }
 }
